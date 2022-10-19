@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.stream.Collectors; 
 
 public class Main{
-    public static Scanner s = new Scanner(System.in);
+    public static Scanner palabra_ingresada = new Scanner(System.in);
     public static final String ANSI_RED = "\u001B[31m"; 
     public static final String ANSI_RESET = "\u001B[0m"; 
     public static final String ANSI_YELLOW = "\u001B[33m"; //Letra correcta pero posición incorrecta
@@ -25,10 +25,10 @@ public class Main{
         //Ciclo principal
         while (!done){
             System.out.println("==================");
-            input_palabra = s.nextLine().toLowerCase(); //Leemos y guardamos la palabra ingresada por el usuario y la ponemos en minuscula
+            input_palabra = palabra_ingresada.nextLine().toLowerCase(); //Leemos y guardamos la palabra ingresada por el usuario y la ponemos en minuscula
             while(input_palabra.length() !=5){ //Si la palabra no tiene 5 letras, entonces no se le permitirá continuar, y su intento no sumará
                 System.out.println("Debes ingresar una palabra de 5 letras, vuelve a intentarlo");
-                input_palabra = s.nextLine().toLowerCase();
+                input_palabra = palabra_ingresada.nextLine().toLowerCase();
             }
 
             attempts++; //Los intentos se suman cada vez que se repita el ciclo
