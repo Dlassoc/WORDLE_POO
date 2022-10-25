@@ -1,3 +1,4 @@
+//requerimientos de base, no de la sustentación, el og
 import java.util.Scanner;
 import javax.xml.transform.Templates;
 import java.io.*;
